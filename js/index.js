@@ -15,8 +15,13 @@ async function fetchLocationData(city) {
 
     const data = await response.json();
 
-
     console.log(data);
+    const suggestions = document.getElementById("suggestions");
+    data.forEach(item => {
+      const option = document.createElement("option");
+      option.value = `${item.name}, ${item.country}`;
+      suggestions.appendChild(option);
+    });
 
   } catch (error) {
 
@@ -25,6 +30,17 @@ async function fetchLocationData(city) {
 }
 
 document.getElementById("searchBtn").addEventListener("click", function () {
-
+  const searchText = document.getElementById("searchInput").value;
+  if (searchText == "") {
+    alert("You need to type something to find cities!!");
+  }
+  fetchLocationData(searchText);
 });
-fetchWeatherData("London");
+
+document.getElementById("gpsLocation").addEventListener("click", function () {
+  navigator.geolocation.getCurrentPosition(function (location) {
+    console.log(location.coords.latitude);
+    console.log(location.coords.longitude);
+  });
+});
+
