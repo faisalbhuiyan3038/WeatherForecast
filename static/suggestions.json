@@ -1,0 +1,98 @@
+[
+    {
+        "condition": "Sunny",
+        "suggestion": "Wear a t-shirt and some shorts when going outside."
+    },
+    {
+        "condition": "Partly cloudy",
+        "suggestion": "Grab a light jacket and enjoy the day."
+    },
+    {
+        "condition": "Cloudy",
+        "suggestion": "Put on a long-sleeve shirt and jeans for comfort."
+    },
+    {
+        "condition": "Overcast",
+        "suggestion": "A light jacket will keep you cozy outside."
+    },
+    {
+        "condition": "Mist",
+        "suggestion": "Wear a light jacket and watch your step."
+    },
+    {
+        "condition": "Patchy rain possible",
+        "suggestion": "Grab an umbrella and wear waterproof shoes."
+    },
+    {
+        "condition": "Patchy snow possible",
+        "suggestion": "Bundle up in a warm coat and wear boots."
+    },
+    {
+        "condition": "Patchy sleet possible",
+        "suggestion": "Dress warmly and slip on some insulated footwear."
+    },
+    {
+        "condition": "Thundery outbreaks possible",
+        "suggestion": "Stay indoors if you can, but if you go out, wear a raincoat."
+    },
+    {
+        "condition": "Blowing snow",
+        "suggestion": "Put on a heavy winter coat and warm boots."
+    },
+    {
+        "condition": "Blizzard",
+        "suggestion": "Stay indoors; if you head out, wear your warmest gear."
+    },
+    {
+        "condition": "Fog",
+        "suggestion": "Wear bright clothing for visibility and stay warm."
+    },
+    {
+        "condition": "Freezing fog",
+        "suggestion": "Layer up and make sure you can be seen."
+    },
+    {
+        "condition": "Light drizzle",
+        "suggestion": "Grab a raincoat when you head outside."
+    },
+    {
+        "condition": "Moderate rain",
+        "suggestion": "Put on a waterproof jacket and take an umbrella."
+    },
+    {
+        "condition": "Heavy rain",
+        "suggestion": "Wear your rain gear and waterproof boots."
+    },
+    {
+        "condition": "Light snow",
+        "suggestion": "Bundle up and wear waterproof snow boots."
+    },
+    {
+        "condition": "Moderate snow",
+        "suggestion": "Get cozy in a heavy coat and insulated boots."
+    },
+    {
+        "condition": "Patchy heavy snow",
+        "suggestion": "Wear your warmest winter gear if you go out."
+    },
+    {
+        "condition": "Ice pellets",
+        "suggestion": "Dress warmly and choose waterproof shoes."
+    },
+    {
+        "condition": "Light rain shower",
+        "suggestion": "Take a raincoat and head out."
+    },
+    {
+        "condition": "Heavy freezing drizzle",
+        "suggestion": "Wear insulated waterproof gear to stay warm and dry."
+    },
+    {
+        "condition": "Moderate or heavy rain with thunder",
+        "suggestion": "Stay indoors if you can; otherwise, wear waterproof clothes."
+    },
+    {
+        "condition": "Patchy light snow with thunder",
+        "suggestion": "Dress warmly and be cautious out there."
+    }
+]
