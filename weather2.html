@@ -10,19 +10,26 @@
 </head>
 <body class="bg-blue-100 p-4 md:p-8">
   <video id="background-video" autoplay loop muted>
-    <source src="static/weather_conditions/drizzle_light_rain.mp4" type="video/mp4">
+    <source src="static/weather_conditions/heavy_rain.mp4" type="video/mp4">
   </video>
     <div class="max-w-4xl mx-auto bg-glass rounded-3xl shadow-lg overflow-hidden">
         <div class="flex flex-col md:flex-row">
             <!-- Left side (main temperature) -->
             <div class="bg-glass-dense text-white p-8 md:w-1/3 order-1 md:order-none">
                 <div class="flex justify-between items-center mb-4">
-                    <button class="text-2xl">+</button>
-                    <div class="flex items-center space-x-2">
-                        <span class="text-sm">°C</span>
-                        <div class="w-8 h-4 bg-white rounded-full"></div>
-                        <span class="text-sm">°F</span>
-                    </div>
+
+<form class="max-w-md mx-auto">
+    <label for="searchLocation" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="searchLocation" class="bg-glass block w-full p-2 ps-10 rounded-2xl text-sm text-gray-900 dark:placeholder-gray-400 dark:text-white" placeholder="Search Location..." required />
+        <button type="submit" class="text-white absolute top-0 end-0 bottom-0 bg-glass hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-4 hover:bg-blue-700 focus:ring-blue-800">Go</button>
+    </div>
+</form>
                 </div>
                 <div class="mb-4">
                     <h2 class="text-lg font-semibold">New York, USA</h2>
@@ -39,7 +46,7 @@
                     <div class="absolute bottom-0 left-1/4 w-16 h-16 bg-yellow-300 rounded-full"></div>
                 </div>
             </div>
-            
+
             <!-- Right side (detailed information) -->
             <div class="p-8 md:w-2/3">
                 <div class="flex justify-between items-center mb-6">
@@ -47,8 +54,8 @@
                     <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
                 </div>
                 <p class="text-gray-600 mb-6">Grab an umbrella and wear waterproof shoes.</p>
-                
-                <div class="bg-blue-50 rounded-xl p-4 mb-6">
+
+                <div class="bg-glass-contrast rounded-xl p-4 mb-6">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="font-semibold">Upcoming hours</h3>
 
@@ -82,31 +89,31 @@
                         <!-- Add more hour columns here -->
                     </div>
                 </div>
-                
+
                 <h3 class="font-semibold mb-4">More details of today's weather</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">Humidity</h4>
                         <p class="text-3xl font-bold">82<span class="text-lg">%</span></p>
                         <p class="text-sm text-red-500">bad</p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">Wind</h4>
                         <p class="text-3xl font-bold">8<span class="text-lg">km/h</span></p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">Precipitation</h4>
                         <p class="text-3xl font-bold">1.4<span class="text-lg">cm</span></p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">UV index</h4>
                         <p class="text-3xl font-bold">4<span class="text-lg">medium</span></p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">Feels like</h4>
                         <p class="text-3xl font-bold">30°</p>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow">
+                    <div class="bg-glass-contrast p-4 rounded-xl shadow">
                         <h4 class="font-semibold mb-2">Chance of rain</h4>
                         <p class="text-3xl font-bold">42%</p>
                     </div>

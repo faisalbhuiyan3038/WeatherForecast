@@ -33,3 +33,12 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.bg-glass-contrast {
+  background: rgba(204, 204, 204, 0.357);
+  box-shadow: 0 1px 8px 0 rgba(102, 103, 119, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
