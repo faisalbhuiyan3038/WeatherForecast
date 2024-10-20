@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/weather2.css">
+</head>
+<body class="bg-blue-100 p-4 md:p-8">
+  <video id="background-video" autoplay loop muted>
+    <source src="static/weather_conditions/drizzle_light_rain.mp4" type="video/mp4">
+  </video>
+    <div class="max-w-4xl mx-auto bg-glass rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+            <!-- Left side (main temperature) -->
+            <div class="bg-glass-dense text-white p-8 md:w-1/3 order-1 md:order-none">
+                <div class="flex justify-between items-center mb-4">
+                    <button class="text-2xl">+</button>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm">°C</span>
+                        <div class="w-8 h-4 bg-white rounded-full"></div>
+                        <span class="text-sm">°F</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold">New York, USA</h2>
+                    <p class="text-sm">Today 28 Sept</p>
+                    <p class="text-sm">07:19 - 19:32</p>
+                </div>
+                <div class="text-center mb-4">
+                    <span class="text-8xl font-bold">27°</span>
+                    <p class="text-xl">Sunny</p>
+                </div>
+                <div class="h-40 relative">
+                    <!-- Placeholder for city skyline -->
+                    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gray-700 rounded-t-3xl"></div>
+                    <div class="absolute bottom-0 left-1/4 w-16 h-16 bg-yellow-300 rounded-full"></div>
+                </div>
+            </div>
+            
+            <!-- Right side (detailed information) -->
+            <div class="p-8 md:w-2/3">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-2xl font-bold">Welcome back Isabella!</h1>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                </div>
+                <p class="text-gray-600 mb-6">Grab an umbrella and wear waterproof shoes.</p>
+                
+                <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-semibold">Upcoming hours</h3>
+
+                    </div>
+                    <div class="flex justify-between text-center">
+                        <div>
+                            <p class="font-semibold">Now</p>
+                            <p class="text-xl my-2">27°</p>
+                            <p class="text-sm">23%</p>
+                        </div>
+                        <div>
+                          <p class="font-semibold">Now</p>
+                          <p class="text-xl my-2">27°</p>
+                          <p class="text-sm">23%</p>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Now</p>
+                        <p class="text-xl my-2">27°</p>
+                        <p class="text-sm">23%</p>
+                    </div>
+                    <div>
+                      <p class="font-semibold">Now</p>
+                      <p class="text-xl my-2">27°</p>
+                      <p class="text-sm">23%</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold">Now</p>
+                    <p class="text-xl my-2">27°</p>
+                    <p class="text-sm">23%</p>
+                </div>
+                        <!-- Add more hour columns here -->
+                    </div>
+                </div>
+                
+                <h3 class="font-semibold mb-4">More details of today's weather</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">Humidity</h4>
+                        <p class="text-3xl font-bold">82<span class="text-lg">%</span></p>
+                        <p class="text-sm text-red-500">bad</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">Wind</h4>
+                        <p class="text-3xl font-bold">8<span class="text-lg">km/h</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">Precipitation</h4>
+                        <p class="text-3xl font-bold">1.4<span class="text-lg">cm</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">UV index</h4>
+                        <p class="text-3xl font-bold">4<span class="text-lg">medium</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">Feels like</h4>
+                        <p class="text-3xl font-bold">30°</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow">
+                        <h4 class="font-semibold mb-2">Chance of rain</h4>
+                        <p class="text-3xl font-bold">42%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // You can add JavaScript here for any interactive features
+    </script>
+</body>
+</html>
